@@ -1,0 +1,14 @@
+.width-container {
+    width: 100%;
+    position: relative;
+}
+
+.saidbar-container {
+    width: 25%;
+    position: relative;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 400;
+}
