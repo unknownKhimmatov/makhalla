@@ -1,0 +1,113 @@
+main {
+    width: 100%;
+    height: 100%;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.item-dashboard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #2E3840;
+}
+
+.brand-main {
+    width: 100%;
+    height: 20%;
+}
+
+.brand {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.brand img {
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+}
+
+.jm {
+    font-size: 2rem;
+    color: #fff;
+    padding: 20px 15px;
+}
+
+.item-dashboard nav {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    transition: .3s;
+}
+
+.item-dashboard nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    transition: .3s;
+    width: 90%;
+}
+
+.item-dashboard nav ul li {
+    font-size: 1.4rem;
+    align-items: center;
+    gap: 15px;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    transition: .3s;
+    border-radius: 8px;
+    padding: 0px 10px;
+}
+
+.item-dashboard nav ul li:hover {
+    background-color: #fff;
+    transition: .3s;
+    color: #2E3840;
+    cursor: pointer;
+}
+
+.show-reviev {
+    position: absolute;
+    width: 60px;
+    border-radius: 100%;
+    right: -30px;
+    top: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    z-index: 111111111;
+    background-color: #fff;
+}
+
+.show-reviev i {
+    transition: .3s;
+    font-size: 2rem;
+    color: #6096B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
