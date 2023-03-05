@@ -1,37 +1,66 @@
+.statistika-container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.statistika-container::-webkit-scrollbar {
+    display: none;
+}
+
+.item-statistika {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+}
+
+
+
+
+
+.qoshimcha-statistika {
+    width: 100%;
+    height: auto;
+}
+
 .QoshimchaStat {
     width: 100%;
-    /* border: 1px solid black; */
-    height: 25vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
 }
 
 .item-qoshimcha {
     width: 95%;
-    /* border: 1px solid black; */
     height: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    gap: 20px;
+    box-sizing: border-box;
 }
 
 .item-qoshimcha .card-stat {
-    width: 32%;
+    width: 100%;
     height: 100%;
-    background-color: #2E3840;
+    background-color: #4E6E81;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    color: aliceblue;
+    color: #fff;
     transition: .3s;
+    border: 2px solid #4E6E81;
     cursor: pointer;
     justify-content: center;
 }
 
 .item-qoshimcha .card-stat:hover {
-    border: 1px solid #2E3840;
-    background-color: inherit;
-    color: #2E3840;
+    background-color: #fff;
+    color: #4E6E81;
     transition: .3s;
 }

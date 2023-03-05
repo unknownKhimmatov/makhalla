@@ -36,11 +36,6 @@ export default function Dashboard() {
                             <NavLink className='brand-main' to='/'>
                                 <div className="brand">
                                     <img src="./img/mahalla.png" style={{ display: show !== true ? "block" : "none" }} alt="" />
-                                    <h3 className='jm' style={{ display: show !== true ? "none" : "block" }}>
-                                        <span>
-                                            JM
-                                        </span>
-                                    </h3>
                                 </div>
 
                             </NavLink>

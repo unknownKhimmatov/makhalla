@@ -1,0 +1,29 @@
+.home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.item-home {
+    width: 95%;
+    position: relative;
+    border: 1px solid black;
+}
+
+.mahalla-information {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.mahalla-information .card{
+    width: 90%;
+    border: 1px solid black;
+}
+.card-information-mahalla ul{
+    display: flex;
+    gap: 20px;
+}
