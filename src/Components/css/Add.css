@@ -1,0 +1,333 @@
+.adduser {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.active{
+    font-size: 2.6rem;
+}
+
+.item-adduser {
+    width: 95%;
+    height: 95%;
+    justify-content: center;
+    overflow: scroll;
+    position: relative;
+}
+
+.item-adduser::-webkit-scrollbar {
+    display: none;
+}
+
+.item-adduser section {
+    width: 100%;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 49% 48%;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.item-adduser section span {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section span input {
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 70px;
+    font-size: 1.1rem;
+    background-color: #4E6E81;
+    color: #dddddd;
+    border: none;
+    outline: none;
+}
+
+section span select {
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 70px;
+    font-size: 1.1rem;
+    background-color: #4E6E81;
+    color: #dfdddd;
+    border: none;
+    outline: none;
+    /* padding: 10px; */
+}
+
+section span input::placeholder {
+    color: #cfcfcf;
+}
+
+.bottom-button {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.bottom-button button {
+    width: 50%;
+    height: 65px;
+    border-radius: 10px;
+    border: 3px solid #4E6E81;
+    color: #4E6E81;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.bottom-button button:hover {
+    background-color: #4E6E81;
+    transition: .3s;
+    color: #cfcfcf;
+}
+
+
+
+
+.center-container {
+    width: 100%;
+    transition: .4s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.center-container .center-item {
+    width: 95%;
+    height: auto;
+    height: 43px;
+    position: sticky;
+    top: 15px;
+    left: 0;
+}
+
+.center-container .center-item input {
+    width: 100%;
+    padding: 1vw 40px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    height: 50px;
+    background-color: #4E6E81;
+    margin-bottom: 25px;
+    color: #cfcfcf;
+}
+
+.center-container .center-item input::placeholder {
+    color: #cfcfcf;
+}
+
+.center-container .center-item .icons_search {
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    color: #cfcfcf;
+    font-size: 18px;
+}
+
+.center-container .center-item .center-navbar {
+    justify-content: space-between;
+    padding: 35px 0;
+    position: relative;
+}
+
+.center-container .center-item .center-navbar .center-nav {
+    justify-content: space-between;
+    width: 500px;
+}
+
+.center-container .center-item .center-navbar .center-nav p {
+    user-select: none;
+}
+
+.center-container .center-item .center-navbar .center-button {
+    width: auto;
+    align-items: center;
+}
+
+.center-container .center-item .center-navbar .center-button button {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: auto;
+  padding: 5px;
+  gap: 5px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #4E6E81;
+}
+.center-container .center-item .center-navbar .center-button button:hover{
+    background-color: #4E6E81;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.center-container .center-item .center-navbar .center-button button i {
+    margin-left: 3px;
+    font-size: 1.3rem;
+}
+
+.center-container .center-item .center-navbar .center-button button .filter {
+    color: RGB(50, 133, 255);
+}
+
+.center-container .center-item .center-navbar .center-button .filter1 {
+    background-color: white;
+    color: RGB(50, 133, 255);
+    border: 1px solid RGB(50, 133, 255);
+}
+
+.select-fillter {
+    width: 100px;
+    margin-left: 20px;
+    height: 38px;
+}
+
+.select-fillter select {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    outline: none;
+    background-color: #4E6E81;
+    color: #fff;
+    padding: 10px;
+}
+
+.center-item .head-item {
+    width: 100%;
+    height: auto;
+    background-color: #4E6E81;
+    align-items: center;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.center-item .head-item .head-start {
+    width: 80px;
+    padding: 8px 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head-start i {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.center-item .head-item .tayoq {
+    width: 1px;
+    height: 25px;
+    background-color: white;
+}
+
+.center-item .head-finish {
+    width: 80px;
+    padding: 8px 10px;
+    font-size: 18px;
+    align-items: center;
+    font-weight: 300;
+    color: white;
+    justify-content: space-between;
+}
+
+.center-item .filter-container {
+    width: 200px;
+    height: 130px;
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    box-shadow: 0px 0px 10px rgba(126, 126, 126, 0.074);
+    top: 80px;
+    z-index: 10;
+    border-radius: 10px;
+    padding: 10px 0;
+    display: none;
+}
+
+.center-item .filter-container .filter-box p {
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    user-select: none;
+    transition: .2s all;
+}
+
+.center-item .filter-container .filter-box p:hover {
+    background-color: white;
+}
+
+
+
+.yoshlar-container {
+    width: 100%;
+}
+
+.yoshlar-item1 {
+    width: 100%;
+    overflow: scroll;
+    height: 68vh;
+    margin: 10px 0px;
+    border: 2px solid #4E6E81;
+    background-color: #4E6E81;
+    border-radius: 10px 10px 0px 0px ;
+}
+
+.yoshlar-item1::-webkit-scrollbar{
+    display: none;
+}
+.yoshlar-box {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+    color: #cfcfcf;
+}
+.yoshlar-box:hover{
+    color: #4E6E81;
+    transition: .3s;
+    background-color: #cfcfcf;
+}
+
+.yoshlar-start {
+    width: 104%;
+    display: flex;
+    gap: 20px; 
+    padding-left: 10px;
+}
+
+.fshi-list {
+    display: flex;
+    gap: 45px;
+}
+
+.yoshlar-finish {
+    /* padding-left: 20px; */
+    width: 100%;
+    justify-content: start;
+    gap: 20px;
+}

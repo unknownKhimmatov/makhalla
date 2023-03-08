@@ -1,11 +1,12 @@
 import { useState } from 'react'
-
 import { Route, Routes, NavLink } from 'react-router-dom'
 import Home from './Home'
 import Statistics from './Statistics'
 import Royxat from './List'
 import Qoshish from './AddUser'
-
+import Notifikation from '../profile/Notifikation'
+import Ayollar from '../List/Ayollar'
+import List from './List'
 import { AiOutlineHome, AiOutlineOrderedList } from 'react-icons/ai'
 import { GiChart } from 'react-icons/gi'
 import { MdOutlineDashboard } from 'react-icons/md'
@@ -16,6 +17,8 @@ import { BsPersonAdd } from 'react-icons/bs'
 import '../css/Dashboard.css'
 import Profile from '../profile/ProfileDash'
 import Sektorlar from '../Sektorlar/Sektorlar'
+import AddList from '../List/AddList'
+import Mahallalar from '../Mahallalar/Mahallalar'
 
 
 
@@ -92,6 +95,17 @@ export default function Dashboard() {
                             <Route path='/Royxat' element={<Royxat />}  ></Route>
                             <Route path='/Qoshish' element={<Qoshish />} ></Route>
                             <Route path='/Sektorlar' element={<Sektorlar />} ></Route>
+                            <Route path='/Notifikation' element={<Notifikation />} ></Route>
+
+                            {/* list  */}
+                            <Route path='/List' element={<List />} ></Route>
+                            <Route path='/Ayollar' element={<Ayollar />} ></Route>
+                            <Route path='/AddList' element={<AddList />}  > </Route>
+
+                            {/* mahallalar  */}
+
+                            <Route path='/Mahallalar' element={<Mahallalar />}  ></Route>
+
                         </Routes>
                     </div>
                     <div className="profile-main">
